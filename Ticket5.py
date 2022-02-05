@@ -1,0 +1,64 @@
+# Revision 1 Feb 4, 2022
+## Begin Derek J. Ruggirello (Feb 1, 2022)
+
+# Imports 'random' module as requested per customer.
+import random
+
+# Variable list in order to store treasure items.
+treasure_Chest = []
+
+# Variable to hold inputs
+x = ""
+
+# While loop in order to ask for input to chest. Terminates on quit
+while x != "quit" and x != "Quit":
+
+    # Clears input variable each cycle
+    x = ""
+    x = input("Enter item to add to treasure chest. When done type 'quit' : \n")
+    
+    # Stops from adding termination trigger to list.
+    if x == "quit" or x == "Quit":
+        break
+    else:
+        # Adds item to chest.
+        treasure_Chest.append(x)
+
+# Outputs contents of treasure chest.
+print(treasure_Chest)
+
+# Variable to store bank amount
+bank = input("Please enter the initial deposit amount for the bank: \n")
+
+# Typecast variable in order to use it later.
+bank = int(bank)
+
+# Variable to create the wager amount per guess.
+wager = input("Please enter the amount per wager: \n")
+
+# Typecast variable in order to use it later.
+wager = int(wager)
+
+# Loop to perform guessing game.
+while bank > 0:
+
+    guess = input("Enter the guess for the ouput of treasure grab game: \n")
+
+    # Branch for correct guess.
+    if guess == random.choice(treasure_Chest):
+        
+        # Updates bank variable 
+        bank = (bank + wager)
+        print("Guess correct. New balance:", bank, "\n")
+
+    # Branch for incorrect guess.
+    else:
+        bank = (bank - wager)
+        print("Guess incorrect. New balance:", bank, "\n")
+
+# Output an ending message.
+print("Balance is 0 or below. Best luck next time.")
+
+# Revision 1 Feb 4, 2022
+## End Derek J. Ruggirello here
+# Omega Group/ Ram Valud/ Michael Walker/ project greenwood321 #
