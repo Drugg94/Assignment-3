@@ -1,0 +1,20 @@
+# Revision 1 Feb 1, 2022
+## Begin Derek J. Ruggirello (Feb 1, 2022)
+
+# Group 1
+my_var1 = 7.0
+my_var2 = 5
+print(my_var1 % my_var2)
+
+# Group 2
+x = 4
+y = 5
+print(x//y)
+
+# Group three
+
+30-3**2+8//3**2*10
+
+# Revision 1 Feb 1, 2022
+## End Derek J. Ruggirello here
+# Omega Group/ Ram Valud/ Michael Walker/ project greenwood321 #
