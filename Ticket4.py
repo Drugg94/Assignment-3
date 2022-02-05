@@ -1,0 +1,9 @@
+# Revision 1 Feb 3, 2022
+## Begin Derek J. Ruggirello (Feb 1, 2022)
+
+# Output statement with all equations and answers built in and line breaks.
+print("(a) 2**2**3", 2**2**3, "\n(b) 2**(2**3)", 2**(2**3), "\n(c) (2**2)**3", (2**2)**3)
+
+# Revision 1 Feb 3, 2022
+## End Derek J. Ruggirello here
+# Omega Group/ Ram Valud/ Michael Walker/ project greenwood321 #
